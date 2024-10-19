@@ -41,9 +41,11 @@ export default function ContactForm({ onAdd }) {
       onSubmit={handleSubmit}
       validationSchema={FeedbackSchema}
     >
-      <Form>
-        <div>
-          <label htmlFor={nameFieldId}>Name</label>
+      <Form className={style.form}>
+        <div className={style.boxInput}>
+          <label className={style.label} htmlFor={nameFieldId}>
+            Name
+          </label>
           <Field
             className={style.input}
             type="text"
@@ -54,9 +56,12 @@ export default function ContactForm({ onAdd }) {
           <ErrorMessage className={style.error} name="name" component="span" />
         </div>
 
-        <div>
-          <label htmlFor={numberFieldId}>Phone number</label>
+        <div className={style.boxInput}>
+          <label className={style.label} htmlFor={numberFieldId}>
+            Phone number
+          </label>
           <Field
+            className={style.input}
             type="tel"
             name="number"
             id={numberFieldId}
@@ -70,7 +75,9 @@ export default function ContactForm({ onAdd }) {
           />
         </div>
 
-        <button type="submit">Add contact</button>
+        <button type="submit" className={style.button}>
+          Add contact
+        </button>
       </Form>
     </Formik>
   );
