@@ -1,0 +1,18 @@
+.feedback{
+    margin-top: 30px;
+}
+
+.positive{
+    font-style: italic;
+}
+
+p{
+    font-weight: 300;
+    font-size: large;
+}
+
+@media  (max-width: 600px){
+    .feedback{
+        margin-top: 15px;
+    }
+}

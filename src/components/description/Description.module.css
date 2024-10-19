@@ -1,0 +1,32 @@
+.header{
+    color: rgb(62, 37, 85);
+    margin-bottom: 0;
+    font-size: 50px;
+  
+
+}
+
+.descr{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    max-width: 350px;
+    color: #000000;
+    font-style: italic;
+    font-weight: 300;
+}
+
+@media (max-width: 600px) {
+   .header {font-size: 40px;
+}
+.descr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+}
+
+.coffee{
+padding-top: 10px;
+margin: 0 auto;
+color: rgb(0, 0, 0);
+}
+

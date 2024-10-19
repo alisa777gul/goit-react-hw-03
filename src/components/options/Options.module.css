@@ -1,0 +1,18 @@
+
+
+.good:hover{
+    background-color: #62d66b;
+}
+
+.neutral:hover {
+    background-color: #ffffff;
+}
+
+.bad:hover {
+    background-color: #a73131;
+    color: #ffffff;
+}
+
+.reset:hover {
+    background-color: #ffffff;
+}
