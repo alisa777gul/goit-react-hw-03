@@ -63,13 +63,21 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+input {
+  outline: white;
+}
+
+input:hover {
+  border: 2px solid #9f9fad;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #eaebc4;
   }
   a:hover {
-    color: #e68eee;
+    color: #213547;
   }
   button {
     background-color: #f1ecec;
@@ -83,17 +91,5 @@ ul {
 @media (max-width: 900px) {
   body {
     font-size: 14px;
-  }
-}
-
-@media (max-width: 600px) {
-  body {
-    margin: 0 auto;
-  }
-
-  button {
-    margin-bottom: 10px;
-    width: 70px;
-    padding: 10px;
   }
 }

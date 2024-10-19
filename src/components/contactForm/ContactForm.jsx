@@ -23,12 +23,12 @@ export default function ContactForm({ onAdd }) {
       .max(50, 'Too Long!')
       .required('Required'),
     number: Yup.string()
-      .min(9, 'Too Short!')
-      .max(10, 'Too Long!')
+      .min(9, 'Too Short!') // 7 цифр + 1 дефис или пробелы
+      .max(10, 'Too Long!') // 7 цифр + 1 дефис или пробелы
       .required('Required')
       .matches(
-        /^\d{3}-\d{2}-\d{2}$/,
-        'Phone number must be in the format XXX-XX-XX'
+        /^\d{3}-\d{2}-\d{2}$|^\d{3} \d{2} \d{2}$/,
+        'Phone number must be in the format XXX-XX-XX or XXX XX XX'
       ),
   });
 
@@ -65,8 +65,8 @@ export default function ContactForm({ onAdd }) {
             type="tel"
             name="number"
             id={numberFieldId}
-            pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            placeholder="999-99-99"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}|[0-9]{3} [0-9]{2} [0-9]{2}"
+            placeholder="999-99-99 or 999 99 99"
           />
           <ErrorMessage
             className={style.error}
