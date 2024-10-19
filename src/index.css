@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-      background-color: #eecce1;
+  background-color: #eecce1;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -27,7 +27,6 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  
 }
 
 h1 {
@@ -69,7 +68,9 @@ button:focus-visible {
   }
 }
 
-
+ul {
+  list-style: none;
+}
 
 
 
@@ -77,24 +78,16 @@ button:focus-visible {
   body {
     font-size: 14px;
   }
-
 }
-
 
 @media (max-width: 600px) {
   body {
-margin: 0 auto;
-  
-
-}
-
-  
-
+    margin: 0 auto;
+  }
 
   button {
     margin-bottom: 10px;
     width: 70px;
     padding: 10px;
-
   }
 }
